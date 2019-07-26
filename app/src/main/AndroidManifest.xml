@@ -19,11 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ViewCurrentAlarmsActivity"/>
         <!--<service
             android:name=".AlarmService"
             android:exported="false"
-            android:enabled="true" />
-        <receiver android:name=".AlarmReceiver" />-->
+            android:enabled="true" /> -->
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>
