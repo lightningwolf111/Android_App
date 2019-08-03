@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/alarmList"
+        android:layout_width="297dp"
+        android:layout_height="277dp"
+        android:text=""
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="18dp" />
+    <LinearLayout
+        android:id="@+id/menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/menu_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewHome"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/menu_alarms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewAlarms"
+                android:text="Alarms" />
+
+            <Button
+                android:id="@+id/menu_new"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewNew"
+                android:text="New Alarm" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:onClick="displayMenu"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
